@@ -1,5 +1,3 @@
-/*** models/mariaDBConn.js ***/
-
 var mariadb = require('mariadb');
 
 const pool = mariadb.createPool({
@@ -11,6 +9,7 @@ const pool = mariadb.createPool({
   database: "user_data"
 });
 
+//Sequelize 로 수정 필요
 async function getUserList() {
   let conn, rows;
   try {
